@@ -23,7 +23,7 @@ class
 
 		action:= io.last_string
 
-		if (deep_equal( action, "WEST"))then
+		if (equal( action, "WEST"))then
 			create treasure_room.make
 		end
 	end

@@ -23,10 +23,11 @@ class
 			io.read_line
 			action := io.last_string
 
-			if (deep_equal( action, "SOUTH"))
+			if (equal( action, "SOUTH"))
 			then
 				create	initial_room.make
-			elseif (deep_equal( action, "EAST"))then
+			end
+			if (equal( action, "EAST"))then
 				create dragon_room.make
 			end
 
