@@ -17,15 +17,26 @@ class
 	local
 		action:STRING
 		treasure_room: TREASUREROOM
+		i: INTEGER
 	do
 		print ("You can reach the treasure room by walking on the WEST%N")
-		io.read_line
 
-		action:= io.last_string
+		from
+			i:=0
+		until
+			i < 0
+		loop
+			io.read_line
+			action:= io.last_string
 
-		if (equal( action, "WEST"))then
-			create treasure_room.make
+			if (equal( action, "WEST"))then
+				create treasure_room.make
+				i :=-1
+			else
+				print ("Invalid input, please try again%N")
+			end
 		end
+
 	end
 
 end
