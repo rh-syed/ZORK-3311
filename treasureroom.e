@@ -21,7 +21,7 @@ class
 		action:STRING
 		i: INTEGER
 	do
-		print ("This room looks quiet the same as the previous one.%N Your wandering eyes notice two chest lying in the corners of the room%N. One chest is Gold and the other is Silver%N But BE WARNED: Legend says there's death inside one of those chests.%N %N You can go to the initial room by walking SOUTH. %N There is another room on the EAST which has light%N")
+		print ("This room looks quiet the same as the previous one.%N Your wandering eyes notice two chest lying in the corners of the room%N. One chest is Gold and the other is Silver%N But BE WARNED: Legend says there's death inside one of those chests.%N %N You can go to the initial room by walking SOUTH. %N Only the dragon knows which chest has the key%N There is another room on the EAST which has light%N")
 		print ("Your options: %NGo back SOUTH to Treasure Room%N. %N OR %N Go EAST to Dragon Room%N Goto Silver Chest%N Goto Gold Chest %N")
 
 			from
