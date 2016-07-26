@@ -17,39 +17,13 @@ class
 
 	make
 		local
-			action: STRING
-			i: INTEGER
-
-			treasure_room: TREASUREROOM
-			door: DOOR
+			controller: CONTROLLER
 		do
 			LOCATION := "InitialRoom"
-			print ("You are alone in a strange Room.%N You can see a big wooden door on SOUTH%N")
-			print ("Your options: %N NORTH to Treasure Room.%N SOUTH to the DOOR%N")
-
-
-			from i:=0
-			until
-				i < 0
-			loop
-				io.read_line
-				action := io.last_string
-
-				if (equal( action, "NORTH"))
-				then
-					create	treasure_room.make
-					LOCATION := "TreasureRoom"
-					i := -1
-				elseif (equal (action, "SOUTH"))then
-					create door.make
-					i:= -1
-				else
-					print ("Invalid Entry. Please try again%N")
-				end
-
-			end
-
-
+			create controller.make
+			controller.updateview("You are alone in a strange Room.%N You can see a big wooden door on SOUTH%N")
+			controller.updateview("Your options: %NNORTH to Treasure Room.%NGoto DOOR%N")
+			controller.controller (LOCATION)
 		end
 
 end

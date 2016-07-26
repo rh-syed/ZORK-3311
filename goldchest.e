@@ -15,8 +15,10 @@ feature {ANY}
 	local
 		action: STRING
 		i: INTEGER
+		controller: CONTROLLER
 	do
-		print ("A beautiful Gold chest. It is so shiny that you could see yourself in it.%N. Crap! I look horrible. Don't remember how long it's been since I took shower...%N")
+		create controller.make
+		controller.updateview ("A beautiful Gold chest. It is so shiny that you could see yourself in it.%N. Crap! I look horrible. Don't remember how long it's been since I took shower...%N")
 
 		from
 			i:=0
