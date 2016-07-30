@@ -26,6 +26,7 @@ class
 		create controller.make
 
 		controller.updateView ("You should not attack the dragon. He can spit Fire!%N")
+		controller.controller ("DragonRoom")
 
 	end
 
@@ -35,6 +36,7 @@ class
 	do
 		create controller.make
 		controller.updateView ("Hmmmm I don't think that's a good idea....%N")
+		controller.controller ("DragonRoom")
 	end
 
 	greetings
@@ -43,6 +45,7 @@ class
 	do
 		create controller.make
 		controller.updateView ("Hello Stranger.%N")
+		controller.controller ("DragonRoom")
 	end
 
 	hint
@@ -51,6 +54,7 @@ class
 	do
 		create controller.make
 		controller.updateView ("The exit door is locked. To find the key, you must answer an enigma.%N If you are ready I can sing it!%N")
+		controller.controller ("DragonRoom")
 	end
 
 	enigma
@@ -60,6 +64,7 @@ class
 	do
 		create controller.make
 		controller.updateView (" I don't have eyes, but once I did see. Once I had thoughts, but now I'm white and empty%N")
+		controller.controller ("DragonRoom")
 
 	end
 
@@ -69,6 +74,7 @@ class
 	do
 		create controller.make
 		controller.updateView ("You must not give up that easily! If you don't find the answer, you are going to be locked in forever! DON'T USE GOOGLE, I WILL LITERALLY SMOKE YOU!")
+		controller.controller ("DragonRoom")
 
 	end
 
@@ -79,8 +85,7 @@ class
 		create controller.make
 		controller.updateView ("You cracked the enigma, Congratulations! The key is in the Golden Chest.")
 		controller.updateView ("Watchout don't try to open the other one! Death will succumb you!")
-
-
+		controller.controller ("DragonRoom")
 	end
 
 end

@@ -15,6 +15,8 @@ class
 	KEY: BOOLEAN
 
 	make
+	local
+	controller: CONTROLLER
 	do
 		KEY := false
 		print ("A big wooden door. It has a lock.%N There is a sign above door that read: If it is upto be, it is upto me.%N")
